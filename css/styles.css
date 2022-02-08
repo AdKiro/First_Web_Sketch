@@ -229,3 +229,22 @@ h3 {
     font-size: 1.4rem;
   }
 }
+
+/*INPUTS*/
+.input {
+  outline: 0;
+  color: var(--color-headings);
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  border-radius: 34px;
+  border: 1px solid #c7c6ce;
+}
+::placeholder {
+  color: #c7c6ce;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
