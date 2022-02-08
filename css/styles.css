@@ -238,6 +238,7 @@ h3 {
   padding: 2rem 4rem;
   border-radius: 34px;
   border: 1px solid #c7c6ce;
+  width: 0;
 }
 ::placeholder {
   color: #c7c6ce;
@@ -247,4 +248,29 @@ h3 {
   .input {
     font-size: 1.5rem;
   }
+}
+
+/*INPUT GROUP*/
+.input-group {
+  display: flex;
+  border-radius: 35px;
+  padding: 0.5rem;
+  box-shadow: 0 0 20px 5px #e0dfe4;
+}
+
+.input-group .input {
+  flex-grow: 1;
+  border: 0;
+}
+
+.input-group .btn {
+  padding-left: 3rem;
+}
+
+.btn .icon {
+  fill: white;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
