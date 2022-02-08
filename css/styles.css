@@ -146,3 +146,24 @@ h3 {
     padding-left: 0;
   }
 }
+
+/*ICONS*/
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.icon--primary {
+  fill: var(--primary-color);
+}
+
+.icon-container {
+  height: 70px;
+  width: 70px;
+  background-color: #f3f9fa;
+  display: inline-flex;
+  border-radius: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
