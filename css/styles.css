@@ -150,6 +150,9 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
+  .list {
+    font-size: 1.8rem;
+  }
   .list__tick .list__item {
     padding-left: 0;
   }
@@ -279,11 +282,11 @@ h3 {
 
 /*PLANS*/
 .plan {
-  width: 30%;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 20px 5px #e0dfe4;
-  overflow: visible;
-  margin: 3rem;
+  overflow: hidden;
+  /* margin: 3rem; */
   transition: scale 0.2s;
 }
 
@@ -342,4 +345,22 @@ h3 {
 
 .plan .plan__body {
   padding: 2rem 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan .plan__cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan .plan__description {
+    font-size: 1.7rem;
+  }
 }
