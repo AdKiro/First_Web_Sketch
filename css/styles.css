@@ -405,13 +405,13 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
-  .grid--1x2 {
+  .grid .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .grid--1x3 {
+  .grid .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -499,11 +499,60 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
-  .grid--1x2 {
+  .testimonial .grid--1x2 {
     grid-template-columns: 40fr 60fr;
   }
 
   .testimonial__image {
     margin: 0;
+  }
+}
+
+/*CALLOUT*/
+.callout {
+  background-color: var(--primary-color);
+  padding: 6rem 4rem;
+  border-radius: 10px;
+}
+
+.callout__heading,
+.callout__text {
+  color: white;
+}
+
+.callout__heading {
+  font-size: 4rem;
+}
+
+.callout__text {
+  font-size: 2.4rem;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .callout__text {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .btn {
+    justify-self: left;
+    margin-left: 5rem;
+  }
+
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
   }
 }
