@@ -597,3 +597,43 @@ h3 {
 .collapsible--expanded .collapsible__icon {
   transform: rotate(0);
 }
+
+/*BLOCKS*/
+
+.block {
+  padding: 10rem 3rem;
+}
+
+.block--dark {
+  background-color: black;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: 18rem;
+}
+
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: 18rem;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
