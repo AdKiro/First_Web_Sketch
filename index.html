@@ -15,26 +15,20 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="block block--dark block--skewed-left">
-      <div class="container">
-        <div class="block__header">
-          <h3 class="block__heading">User-Friendly Control Panel</h3>
-        </div>
-        <div class="block__body">
-          <div class="media">
-            <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#wordpress"></use>
-            </svg>
-            <div class="media__body">
-              <h3 class="media__heading">Easy Start & Managed Updates</h3>
-              <p class=media__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                assumenda.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="nav collapsible">
+      <a class="nav__logo" href="/"
+        ><img src="/images/logo.svg" alt="Mosh logo"
+      /></a>
+      <svg class="icon icon--secondary">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list">
+        <li class="list__item"><a href="">Hosting</a></li>
+        <li class="list__item"><a href="">VPS</a></li>
+        <li class="list__item"><a href="">Domain</a></li>
+        <li class="list__item"><a href="">Pricing</a></li>
+      </ul>
+    </div>
+    <script src="/js/main.js"></script>
   </body>
 </html>
