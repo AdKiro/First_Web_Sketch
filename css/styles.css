@@ -718,3 +718,54 @@ h3 {
     border-bottom: none;
   }
 }
+
+/*HERO*/
+
+.hero__image > img {
+  width: 100%;
+}
+
+.hero__content {
+  text-align: center;
+}
+
+.hero__content > h1 {
+  color: white;
+  font-size: 7rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero__content > p {
+  margin: 1rem 0 4rem;
+}
+
+.hero .btn {
+  width: 60%;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero .btn {
+    width: 200px;
+  }
+
+  .hero__content {
+    text-align: start;
+  }
+
+  .hero__content > h1 {
+    font-size: 8rem;
+  }
+
+  .hero__content > p {
+    font-size: 2rem;
+  }
+
+  .hero .grid {
+    align-items: center;
+  }
+}
