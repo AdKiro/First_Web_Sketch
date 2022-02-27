@@ -1012,16 +1012,17 @@ h3 {
   }
 
   .footer__content {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); */
     gap: 2rem;
+    justify-content: space-between;
     /* flex-wrap: nowrap; */
-    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .footer .logo__container {
     order: -1;
     margin: 0;
-    justify-self: center;
+    justify-self: start;
     /* align-self: center; */
   }
 
@@ -1037,5 +1038,6 @@ h3 {
   .footer .collapsible {
     border-bottom: none;
     padding: 0;
+    justify-self: center;
   }
 }
