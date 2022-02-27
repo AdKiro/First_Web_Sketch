@@ -892,3 +892,63 @@ h3 {
     order: 2;
   }
 }
+
+/*SHOWCASE*/
+
+.showcase__heading,
+.showcase__content .media__heading {
+  color: white;
+}
+.showcase__heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.showcase__content {
+  padding-left: 2.5rem;
+}
+
+.showcase__content .media {
+  padding-bottom: 5rem;
+}
+
+.showcase__content .icon {
+  min-width: 40px;
+}
+/* .showcase__content .icon > use {
+  width: 100px;
+  height: 100px;
+} */
+
+.showcase__image {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.showcase.block--skewed-left {
+  padding-bottom: 25rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .showcase.block--skewed-left {
+    padding-bottom: 18rem;
+  }
+
+  .showcase__content .media:first-of-type {
+    padding-top: 1rem;
+  }
+
+  .showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .showcase__image {
+    width: auto;
+    justify-self: end;
+    max-width: 700px;
+  }
+
+  .showcase__image__container {
+    justify-self: end;
+  }
+}
