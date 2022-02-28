@@ -458,6 +458,7 @@ h3 {
 
 .quote__footer {
   display: flex;
+  margin-top: 4rem;
 }
 
 .quote__icon {
@@ -482,15 +483,19 @@ h3 {
 }
 
 /*TESTIMONIAL*/
-.profile-image {
+.testimonial .profile-image {
   width: 100%;
 }
 
-.testimonial {
+.testimonial__header {
+  text-align: center;
+}
+
+.testimonial__content {
   padding: 3rem;
   box-shadow: 0 0 20px 5px #e0dfe4;
   border-radius: 5px;
-  margin: 2rem;
+  margin: 4rem 2rem 2rem;
 }
 
 .testimonial__image {
@@ -520,8 +525,10 @@ h3 {
 /*CALLOUT*/
 .callout {
   background-color: var(--primary-color);
-  padding: 6rem 4rem;
+  padding: 4rem 4rem;
   border-radius: 10px;
+  max-width: 980px;
+  margin: 10rem 2rem 5rem;
 }
 
 .callout__heading,
@@ -540,6 +547,7 @@ h3 {
 .callout .btn {
   justify-self: center;
   align-self: center;
+  margin: 3rem 0 2rem;
 }
 
 .callout__content {
@@ -547,6 +555,10 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
+  .callout {
+    margin: 10rem auto 5rem;
+  }
+
   .callout__text {
     font-size: 2rem;
     margin-bottom: 0;
@@ -753,6 +765,10 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
+  .hero.block {
+    padding-top: 0;
+  }
+
   .hero .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
