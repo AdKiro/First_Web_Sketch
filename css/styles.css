@@ -505,11 +505,29 @@ h3 {
 
 .testimonial__image .icon-container {
   background-color: var(--color-accent);
-  height: 90px;
-  width: 90px;
+  height: 60px;
+  width: 60px;
   position: absolute;
   top: 20px;
-  right: -45px;
+  right: -30px;
+}
+
+.testimonial__image .icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 678px) {
+  .testimonial__image .icon-container {
+    height: 90px;
+    width: 90px;
+    right: -45px;
+  }
+
+  .testimonial__image .icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -520,15 +538,29 @@ h3 {
   .testimonial__image {
     margin: 0;
   }
+
+  .testimonial__image .icon-container {
+    height: 90px;
+    width: 90px;
+    right: -45px;
+  }
+
+  .testimonial__image .icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /*CALLOUT*/
 .callout {
+  position: relative;
   background-color: var(--primary-color);
   padding: 4rem 4rem;
   border-radius: 10px;
   max-width: 980px;
   margin: 10rem 2rem 5rem;
+
+  /* bottom: -7rem; */
 }
 
 .callout__heading,
@@ -556,7 +588,8 @@ h3 {
 
 @media screen and (min-width: 1024px) {
   .callout {
-    margin: 10rem auto 5rem;
+    margin: 0 auto;
+    bottom: -10rem;
   }
 
   .callout__text {
@@ -1010,6 +1043,10 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
+  .footer.block {
+    padding: 15rem 3rem 5rem;
+  }
+
   .footer .list__item {
     font-size: 1.5rem;
   }
